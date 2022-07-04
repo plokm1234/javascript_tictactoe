@@ -1,0 +1,42 @@
+body {
+    background-color: #F5F5F7;
+}
+
+.heading {
+    margin: 5% 5%;
+    text-align: center;
+}
+
+.middle {
+    padding: 20%;
+}
+
+.customRow {
+    margin: auto;
+    text-align: center;
+    width: 33%;
+    background-color: #FFF;
+}
+
+.customCol {
+    border: 1px solid;
+    font-size: 70px;
+    width: 30%;
+    height: 110px;
+}
+
+button.customCol:hover{
+    background-color: #F5F5F7;
+}
+
+.customKeys {
+    text-align: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.customKey {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 10px;
+}

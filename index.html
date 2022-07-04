@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script defer src="game.js"></script>
+        <title>Demo Project</title>
+    </head>
+    <body>
+        <h1 class="heading">Tic Tac Toe</h1>
+
+        <div class="customRow row">
+            <button id="1" class="customCol col" onclick="handleClick(this)" disabled></button>
+            <button id="2" class="customCol col" onclick="handleClick(this)" disabled></button>
+            <button id="3" class="customCol col" onclick="handleClick(this)" disabled></button>
+            <div class="w-100"></div>
+            <button id="4" class="customCol col" onclick="handleClick(this)" disabled></button>
+            <button id="5" class="customCol col" onclick="handleClick(this)" disabled></button>
+            <button id="6" class="customCol col" onclick="handleClick(this)" disabled></button>
+            <div class="w-100"></div>
+            <button id="7" class="customCol col" onclick="handleClick(this)" disabled></button>
+            <button id="8" class="customCol col" onclick="handleClick(this)" disabled></button>
+            <button id="9" class="customCol col" onclick="handleClick(this)" disabled></button>
+        </div>
+
+        <div class="customKeys btn-group" role="group">
+            <button id = "start" type="button" class="customKey btn btn-outline-primary" onclick="handleStart(this)">Start</button>
+            <button id = "reset" type="button" class="customKey btn btn-outline-danger" onclick="handleReset(this)">Reset</button>
+            <button type="button" class="customKey btn btn-outline-success" onclick="handlePlayground(this)">Playground</button>
+        </div>
+
+        <div id = "choice" class="customKeys btn-group" role="group" hidden>
+            <button id = "O" type="button" class="customKey btn btn-outline-primary" onclick="handleO(this)">O</button>
+            <button id = "X" type="button" class="customKey btn btn-outline-danger" onclick="handleX(this)">X</button>
+        </div>
+
+    </body>
+</html>
